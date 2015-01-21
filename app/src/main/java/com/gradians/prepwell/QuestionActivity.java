@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -35,6 +36,17 @@ public class QuestionActivity extends Activity {
 
         Question qsn1 = builder.build("11.245");
         renderQuestion(qsn1);
+    }
+
+    public void revealStep(View view) {
+        ViewGroup llContainer = (ViewGroup)findViewById(R.id.llContainer);
+        for (int i = 0; i < llContainer.getChildCount(); i++) {
+            View v = llContainer.getChildAt(i);
+            if (v.getVisibility() == View.INVISIBLE) {
+                v.setVisibility(View.VISIBLE);
+                break;
+            }
+        }
     }
 
     private void renderQuestion(Question question) {
@@ -61,10 +73,13 @@ public class QuestionActivity extends Activity {
                     String[] options = question.getOptions(i, j, k);
                     for (int l = 0; l < options.length; l++) {
                         llContainer.addView(getTextView(String.format("Step %s.%s", k, l)));
+                        View display = null;
                         if (options[l].startsWith("img"))
-                            llContainer.addView(getImageView("problems/" + id + "/" + options[l]));
+                            display = getImageView("problems/" + id + "/" + options[l]);
                         else
-                            llContainer.addView(getWebView(options[l]));
+                            display = getWebView(options[l]);
+                        display.setVisibility(View.INVISIBLE);
+                        llContainer.addView(display);
                     }
                 }
             }
@@ -76,7 +91,9 @@ public class QuestionActivity extends Activity {
         for (int i = 0; i < answers.length; i++) {
             char label = (char)((int)'a'+i);
             llContainer.addView(getTextView(label + ")"));
-            llContainer.addView(getWebView(answers[i]));
+            View display = getWebView(answers[i]);
+            display.setVisibility(View.INVISIBLE);
+            llContainer.addView(display);
         }
 
     }
