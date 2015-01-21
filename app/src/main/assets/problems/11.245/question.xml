@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<question xmlns="http://www.gradians.com">
+  <id>11.245</id>
+  <topicId>11</topicId>
+  <statement>
+    <image>img.1</image>
+  </statement>
+  <solution>
+    <part>
+      <step>
+        <option>
+          <image>img.2</image>
+        </option>
+        <option correct="true">
+          <image>img.3</image>
+        </option>
+      </step>
+      <step>
+        <option correct="true">
+          <latex>\text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\\vert\vec{a}\times\vert\cos\phi</latex>
+        </option>
+        <option>
+          <latex>\text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\\vert\vec{a}\cdot\vert\cos\phi</latex>
+        </option>
+      </step>
+    </part>
+  </solution>
+  <answer>
+    <latex>\dfrac{2}{3}</latex>
+  </answer>
+  <answer correct="true">
+     <latex>\dfrac{9}{6}</latex>
+  </answer>
+  <answer>
+    <latex>\dfrac{2}{9}</latex>
+  </answer>
+  <answer>
+    <latex>\dfrac{3}{7}</latex>
+  </answer>
+</question>
