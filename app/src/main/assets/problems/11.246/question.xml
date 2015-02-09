@@ -15,24 +15,31 @@
         <latex>\text{Find the domain for which the two functions are equal}</latex>
       </statement>
       <step>
-        <option>
+        <option reason="Of course it cannot be">
           <latex>
             \text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\
             \vert\vec{a}\times\vert\cos\phi
           </latex>
         </option>
-        <option correct="true">
+        <option correct="true" reason="Of course this is how it would be">
           <latex>
             \text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\
-            \vert\vec{a}\times\vert\cos\phi</latex>
+            \vert\vec{a}\times\vert\cos\phi
+          </latex>
         </option>
       </step>
       <step>
-        <option correct="true">
-          <latex>\text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\\vert\vec{a}\times\vert\cos\phi</latex>
+        <option correct="true" reason="Because the vector is not A but B">
+          <latex>
+            \text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\
+            \vert\vec{a}\times\vert\cos\phi
+          </latex>
         </option>
-        <option>
-          <latex>\text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\\vert\vec{a}\cdot\vert\cos\phi</latex>
+        <option reason="Because the vector is B not A">
+          <latex>
+            \text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\
+            \vert\vec{a}\cdot\vert\cos\phi
+          </latex>
         </option>
       </step>
     </part>
