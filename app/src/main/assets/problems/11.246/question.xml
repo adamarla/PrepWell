@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<question xmlns="http://www.gradians.com">
+  <id>11.246</id>
+  <topicId>11</topicId>
+  <statement>
+    <latex>
+      \text{Given two functions}\\
+      f:\mathbb{R}\rightarrow\mathbb{R} = 2 x^2 -\frac{3}{7} \text{ and }\\
+      g:\mathbb{R}\rightarrow\mathbb{R} = -(2 + 4 x)
+    </latex>
+  </statement>
+  <solution>
+    <part>
+      <statement>
+        <latex>\text{Find the domain for which the two functions are equal}</latex>
+      </statement>
+      <step>
+        <option>
+          <latex>
+            \text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\
+            \vert\vec{a}\times\vert\cos\phi
+          </latex>
+        </option>
+        <option correct="true">
+          <latex>
+            \text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\
+            \vert\vec{a}\times\vert\cos\phi</latex>
+        </option>
+      </step>
+      <step>
+        <option correct="true">
+          <latex>\text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\\vert\vec{a}\times\vert\cos\phi</latex>
+        </option>
+        <option>
+          <latex>\text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\\vert\vec{a}\cdot\vert\cos\phi</latex>
+        </option>
+      </step>
+    </part>
+  </solution>
+  <answer>
+    <latex>\dfrac{2}{3}</latex>
+  </answer>
+  <answer correct="true">
+     <latex>\dfrac{9}{6}</latex>
+  </answer>
+  <answer>
+    <latex>\dfrac{2}{9}</latex>
+  </answer>
+  <answer>
+    <latex>\dfrac{3}{7}</latex>
+  </answer>
+</question>

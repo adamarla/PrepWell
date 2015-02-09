@@ -34,7 +34,7 @@ public class QuestionActivity extends Activity {
 
         builder = new QuestionBuilder(this.getApplicationContext());
 
-        Question qsn1 = builder.build("11.245");
+        Question qsn1 = builder.build("11.246");
         renderQuestion(qsn1);
     }
 
@@ -69,6 +69,7 @@ public class QuestionActivity extends Activity {
             llContainer.addView(getTextView(String.format("Solution %d", (i+1))));
             for (int j = 0; j < question.numParts(i); j++) {
                 llContainer.addView(getTextView(String.format("Part %s)", (char)((int)'a'+j))));
+                llContainer.addView(getWebView(question.getPartStatement(i, j)));
                 for (int k = 0; k < question.numSteps(i, j); k++) {
                     String[] options = question.getOptions(i, j, k);
                     for (int l = 0; l < options.length; l++) {

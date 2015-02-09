@@ -20,6 +20,7 @@
     </xsd:complexType>
     <xsd:complexType name="partType">
         <xsd:sequence>
+            <xsd:element name="statement" type="tns:resourceType" minOccurs="0"/>
             <xsd:element name="step" type="tns:stepType" maxOccurs="unbounded"/>
         </xsd:sequence>
     </xsd:complexType>

@@ -29,10 +29,6 @@ public class Question {
         this.tree = tree;
     }
 
-    public Document getTree() {
-        return tree;
-    }
-
     public String getId() {
         return tree.getElementsByTagName("id").item(0).getTextContent();
     }
@@ -55,12 +51,12 @@ public class Question {
         return tree.getElementsByTagName("solution").getLength();
     }
 
-    public String getSolutionStatement(int solnIdx) {
+    public String getPartStatement(int solnIdx, int partIdx) {
         Element solution = (Element)tree.getElementsByTagName("solution").item(solnIdx);
         if (solution.getElementsByTagName("statement").getLength() == 0)
             return  null;
         else {
-            Element statement = (Element)solution.getElementsByTagName("statement").item(0);
+            Element statement = (Element)solution.getElementsByTagName("statement").item(partIdx);
             NodeList images = statement.getElementsByTagName("image");
             if (images.getLength() == 0) {
                 return statement.getElementsByTagName("latex").item(0).getTextContent();
