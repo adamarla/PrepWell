@@ -3,17 +3,11 @@
     package="com.gradians.prepwell" >
 
     <application
-        android:name=".PrepWellApp"
         android:allowBackup="true"
         android:hardwareAccelerated="false"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name=".AnotherActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
         <activity
             android:name=".QuestionActivity"
             android:label="@string/app_name"
