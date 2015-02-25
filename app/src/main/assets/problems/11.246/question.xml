@@ -6,7 +6,8 @@
     <latex>
       \text{Given two functions}\\
       f:\mathbb{R}\rightarrow\mathbb{R} = 2 x^2 -\frac{3}{7} \text{ and }\\
-      g:\mathbb{R}\rightarrow\mathbb{R} = -(2 + 4 x)
+      g:\mathbb{R}\rightarrow\mathbb{R} = -(2 + 4 x)\\
+      x \geq \gt \lt \leq y
     </latex>
   </statement>
   <solution>

@@ -17,7 +17,7 @@
       </step>
       <step>
         <option correct="true">
-          <latex>\text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\\vert\vec{a}\times\vert\cos\phi</latex>
+          <latex>\text{The projection of}\vec{a} > \vec{b} \text{over}\vec{b}\text{is}\\\vert\vec{a}\times\vert\cos\phi</latex>
         </option>
         <option>
           <latex>\text{The projection of}\vec{a}\text{over}\vec{b}\text{is}\\\vert\vec{a}\cdot\vert\cos\phi</latex>
